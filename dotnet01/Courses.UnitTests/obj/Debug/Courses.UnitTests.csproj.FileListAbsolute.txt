@@ -1,0 +1,1 @@
+C:\Users\Дмитрий\Documents\Visual Studio 2015\Projects\dotnet01\dotnet01\Courses.UnitTests\obj\Debug\Courses.UnitTests.csprojResolveAssemblyReference.cache

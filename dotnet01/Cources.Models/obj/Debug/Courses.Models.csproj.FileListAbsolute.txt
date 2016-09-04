@@ -1,0 +1,9 @@
+C:\Users\Дмитрий\Documents\Visual Studio 2015\Projects\dotnet01\dotnet01\Cources.Models\bin\Debug\Courses.Models.dll.config
+C:\Users\Дмитрий\Documents\Visual Studio 2015\Projects\dotnet01\dotnet01\Cources.Models\bin\Debug\Courses.Models.dll
+C:\Users\Дмитрий\Documents\Visual Studio 2015\Projects\dotnet01\dotnet01\Cources.Models\bin\Debug\Courses.Models.pdb
+C:\Users\Дмитрий\Documents\Visual Studio 2015\Projects\dotnet01\dotnet01\Cources.Models\bin\Debug\EntityFramework.dll
+C:\Users\Дмитрий\Documents\Visual Studio 2015\Projects\dotnet01\dotnet01\Cources.Models\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Дмитрий\Documents\Visual Studio 2015\Projects\dotnet01\dotnet01\Cources.Models\bin\Debug\EntityFramework.xml
+C:\Users\Дмитрий\Documents\Visual Studio 2015\Projects\dotnet01\dotnet01\Cources.Models\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Дмитрий\Documents\Visual Studio 2015\Projects\dotnet01\dotnet01\Cources.Models\obj\Debug\Courses.Models.dll
+C:\Users\Дмитрий\Documents\Visual Studio 2015\Projects\dotnet01\dotnet01\Cources.Models\obj\Debug\Courses.Models.pdb

@@ -1,0 +1,7 @@
+C:\Users\Дмитрий\Documents\Visual Studio 2015\Projects\dotnet01\dotnet01\Courses.Models.Repositories\bin\Debug\Courses.Models.Repositories.dll
+C:\Users\Дмитрий\Documents\Visual Studio 2015\Projects\dotnet01\dotnet01\Courses.Models.Repositories\bin\Debug\Courses.Models.Repositories.pdb
+C:\Users\Дмитрий\Documents\Visual Studio 2015\Projects\dotnet01\dotnet01\Courses.Models.Repositories\bin\Debug\Courses.Models.dll
+C:\Users\Дмитрий\Documents\Visual Studio 2015\Projects\dotnet01\dotnet01\Courses.Models.Repositories\bin\Debug\Courses.Models.pdb
+C:\Users\Дмитрий\Documents\Visual Studio 2015\Projects\dotnet01\dotnet01\Courses.Models.Repositories\obj\Debug\Courses.Models.Repositories.csprojResolveAssemblyReference.cache
+C:\Users\Дмитрий\Documents\Visual Studio 2015\Projects\dotnet01\dotnet01\Courses.Models.Repositories\obj\Debug\Courses.Models.Repositories.dll
+C:\Users\Дмитрий\Documents\Visual Studio 2015\Projects\dotnet01\dotnet01\Courses.Models.Repositories\obj\Debug\Courses.Models.Repositories.pdb

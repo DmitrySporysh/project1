@@ -1,0 +1,106 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@model Courses.ViewModels.AccountCollectionViewModel
+@using Courses.Gui.Helpers
+<br />
+<div class="panel panel-primary">
+    <div class="panel-heading">
+        Аккаунты
+    </div>
+    <div class="panel-body">
+        @using (Html.BeginForm())
+        {
+            <div class="row">
+                <div class="col-xs-12 col-md-8 col-lg-6 col-sm-10">
+                    <div class="input-group">
+                        <span class=" input-group-btn">
+                            @Html.ActionLink("Добавить", "New", new { }, new { @class = "btn btn-info" })
+                        </span>
+                        @Html.TextBox("SearchString", ViewBag.CurrentFilter as string, new { @class = "form-control" })
+                        <span class=" input-group-btn">
+                            <input type="submit" value="Поиск по логину" class="btn btn-primary" />
+                        </span>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>
+                    @Html.ActionLink("Логин", "Index", new { sortOrder = ViewBag.LoginSortParam, currentFilter = ViewBag.CurrentFilter })
+                </th>
+                <th>
+                    Email
+                </th>
+                <th>
+                    @Html.ActionLink("Роль", "Index", new { sortOrder = ViewBag.RoleSortParam, currentFilter = ViewBag.CurrentFilter })
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.Accounts)
+            {
+                <tr>
+                    <td width="25%">@item.Login</td>
+                    <td width="25%">@item.Email</td>
+                    <td width="25%">@item.Role</td>
+                    <td width="25%">
+                        <div class="btn-group">
+                            <a href=@Url.Action("Details",new {id = item.Id}) class=" btn btn-info">
+                                <span class="glyphicon glyphicon-info-sign"></span>
+                            </a>
+                            <a href=@Url.Action("Edit",new {id = item.Id}) class=" btn btn-warning">
+                                <span class="glyphicon glyphicon-edit"></span>
+                            </a>
+                            <a href=@Url.Action("Delete",new {id = item.Id}) class=" btn btn-danger">
+                                <span class="glyphicon glyphicon-trash"></span>
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    <div class="panel-footer">
+        <ul class="pagination pagination-sm">
+            @Html.PageLinks(Model.PageInfo, x => Url.Action("Index", new { page = x, sortOrder = ViewBag.CurrentSort, currentFilter = ViewBag.CurrentFilter }))
+        </ul>
+    </div>
+</div>
+@*<div>
+        Page @(Model.PageInfo.TotalPages < Model.PageInfo.PageNumber ? 0 : Model.PageInfo.PageNumber)
+        of @Model.PageInfo.TotalPages
+
+        @if (Model.PageInfo.PageNumber > 1)
+        {
+            @Html.ActionLink("<<", "Index", new { page = 1, sortOrder = ViewBag.CurrentSort, currentFilter = ViewBag.CurrentFilter })
+            @Html.Raw(" ");
+            @Html.ActionLink("< Prev", "Index", new { page = Model.PageInfo.PageNumber - 1, sortOrder = ViewBag.CurrentSort, currentFilter = ViewBag.CurrentFilter })
+        }
+        else
+        {
+            @:<<
+            @Html.Raw(" ");
+            @:< Prev
+    }
+
+        @if (Model.PageInfo.PageNumber < Model.PageInfo.TotalPages)
+        {
+            @Html.ActionLink("Next >", "Index", new { page = Model.PageInfo.PageNumber + 1, sortOrder = ViewBag.CurrentSort, currentFilter = ViewBag.CurrentFilter })
+            @Html.Raw(" ");
+            @Html.ActionLink(">>", "Index", new { page = Model.PageInfo.TotalPages, sortOrder = ViewBag.CurrentSort, currentFilter = ViewBag.CurrentFilter })
+        }
+        else
+        {
+            @:Next >
+            @Html.Raw(" ")
+            @:>>
+    }
+    </div>*@
+
+<br />
